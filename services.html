@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshops | DIY Craft Workshop</title>
+
+    <meta name="description" content="Browse our wide selection of 10+ DIY craft workshops.">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom Styles -->
+    <link href="assets/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- 🎨 Navigation Bar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-palette text-primary"></i>
+                <span>Craft<span style="color: var(--text-main);">Work</span></span>
+            </a>
+
+            <!-- Mobile Controls -->
+            <div class="d-flex align-items-center gap-2 d-lg-none">
+                <button class="theme-toggle-btn border-0 bg-transparent p-0" aria-label="Toggle Dark Mode">
+                    <i class="bi bi-moon-stars theme-icon" style="color: var(--text-main); font-size: 1.5rem;"></i>
+                </button>
+                <button class="navbar-toggler border-0 p-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <i class="bi bi-list fs-2" style="color: var(--text-main);"></i>
+                </button>
+            </div>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header border-bottom border-secondary border-opacity-10">
+                    <h5 class="offcanvas-title fw-bold" id="offcanvasNavbarLabel">
+                        <i class="bi bi-palette" style="color: var(--primary);"></i> CraftWork
+                    </h5>
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Home Versions
+                            </a>
+                            <ul class="dropdown-menu border-0 shadow-sm" style="background: var(--card-bg);">
+                                <li><a class="dropdown-item fw-bold text-primary" href="index.html">Home 1
+                                        (Workshops)</a></li>
+                                <li><a class="dropdown-item" href="index2.html" style="color: var(--text-main);">Home 2
+                                        (Studio)</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="services.html">Workshops</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="dashboard.html">Dashboard</a>
+                        </li>
+                        <li class="nav-item d-lg-none mt-3">
+                            <a href="signup.html" class="btn-main w-100">Sign Up</a>
+                        </li>
+                    </ul>
+                    <div class="d-none d-lg-flex align-items-center gap-3">
+                        <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle Dark Mode">
+                            <i id="themeIcon" class="bi bi-moon-stars"></i>
+                        </button>
+                        <a href="signup.html" class="btn-main">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="section-padding pb-0 mt-5 pt-5">
+        <div class="container text-center mt-5">
+            <h1 class="hero-title mb-4">Our Creative <span>Workshops</span></h1>
+            <p class="text-muted fs-5 max-w-700 mx-auto">Explore our curated selection of 10 hands-on craft classes.
+                Whether you're a complete beginner or a seasoned creator, we have the perfect studio experience for you.
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Grid (10 Cards - Even Number > 6) -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- Service 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="craft-card">
+                        <div class="position-relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?ixlib=rb-4.0.3&w=600&q=80"
+                                class="card-img-top w-100" alt="Painting">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Canvas Painting</h5>
+                            <p class="card-text mb-4">Expressive acrylic and oil painting lessons for all levels.</p>
+                            <a href="signup.html" class="btn-main w-100">Join Workshop</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="craft-card">
+                        <div class="position-relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?ixlib=rb-4.0.3&w=600&q=80"
+                                class="card-img-top w-100" alt="Pottery">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Pottery & Clay</h5>
+                            <p class="card-text mb-4">Master the wheel and sculpt your own ceramic pieces.</p>
+                            <a href="signup.html" class="btn-main w-100">Join Workshop</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="craft-card">
+                        <div class="position-relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1506806732259-39c2d0268443?ixlib=rb-4.0.3&w=600&q=80"
+                                class="card-img-top w-100" alt="Candle Making">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Candle Making</h5>
+                            <p class="card-text mb-4">Create beautiful, organic soy and beeswax candles.</p>
+                            <a href="signup.html" class="btn-main w-100">Join Workshop</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="craft-card">
+                        <div class="position-relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1584286595398-a59f21d313f5?ixlib=rb-4.0.3&w=600&q=80"
+                                class="card-img-top w-100" alt="Resin Art">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Epoxy Resin Art</h5>
+                            <p class="card-text mb-4">Learn modern resin pouring for coasters and wall art.</p>
+                            <a href="signup.html" class="btn-main w-100">Join Workshop</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="craft-card">
+                        <div class="position-relative overflow-hidden">
+                            <img src="https://images.pexels.com/photos/103130/pexels-photo-103130.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                class="card-img-top w-100" alt="Paper Craft">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Origami & Paper</h5>
+                            <p class="card-text mb-4">Precision paper folding and intricate paper crafts.</p>
+                            <a href="signup.html" class="btn-main w-100">Join Workshop</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="craft-card">
+                        <div class="position-relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1584992236310-6edddc08acff?ixlib=rb-4.0.3&w=600&q=80"
+                                class="card-img-top w-100" alt="Embroidery">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Hand Embroidery</h5>
+                            <p class="card-text mb-4">Traditional stitching techniques for modern fabrics.</p>
+                            <a href="signup.html" class="btn-main w-100">Join Workshop</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 7 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="craft-card">
+                        <div class="position-relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?ixlib=rb-4.0.3&w=600&q=80"
+                                class="card-img-top w-100" alt="Jewelry Making">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Handmade Jewelry</h5>
+                            <p class="card-text mb-4">Wire wrapping and beadworking to make custom pieces.</p>
+                            <a href="signup.html" class="btn-main w-100">Join Workshop</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 8 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="craft-card">
+                        <div class="position-relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1502014822147-1aedfb0676e0?ixlib=rb-4.0.3&w=600&q=80"
+                                class="card-img-top w-100" alt="Macrame">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Modern Macrame</h5>
+                            <p class="card-text mb-4">Knotting techniques to build beautiful wall hangings.</p>
+                            <a href="signup.html" class="btn-main w-100">Join Workshop</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 9 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="craft-card">
+                        <div class="position-relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1602052577122-f73b9710adba?ixlib=rb-4.0.3&w=600&q=80"
+                                class="card-img-top w-100" alt="Soap Making">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Natural Soap Making</h5>
+                            <p class="card-text mb-4">Formulate and cold-press your own botanical soaps.</p>
+                            <a href="signup.html" class="btn-main w-100">Join Workshop</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 10 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="craft-card">
+                        <div class="position-relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?ixlib=rb-4.0.3&w=600&q=80"
+                                class="card-img-top w-100" alt="DIY Home Decor">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">DIY Home Decor</h5>
+                            <p class="card-text mb-4">Upcycle and create minimalist decor items for home.</p>
+                            <a href="signup.html" class="btn-main w-100">Join Workshop</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 👣 Global Footer -->
+    <footer class="footer mt-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Col 1: Brand -->
+                <div class="col-lg-4 col-md-6">
+                    <a class="navbar-brand text-white mb-4 d-inline-flex" href="index.html">
+                        <i class="bi bi-palette text-primary me-2"></i>
+                        <span>CraftWork</span>
+                    </a>
+                    <p class="mb-4" style="color: rgba(255,255,255,0.7); line-height: 1.6;">
+                        Empowering creativity through hands-on DIY workshops. Discover new skills, meet amazing people,
+                        and build things you love.
+                    </p>
+                    <div class="d-flex">
+                        <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Company Links -->
+                <div class="col-lg-2 col-md-6">
+                    <h4 class="footer-title">Company</h4>
+                    <a href="about.html" class="footer-link">About Us</a>
+                    <a href="services.html" class="footer-link">Workshops</a>
+                    <a href="#" class="footer-link">Careers</a>
+                    <a href="#" class="footer-link">Community</a>
+                </div>
+
+                <!-- Col 3: Support Links -->
+                <div class="col-lg-2 col-md-6">
+                    <h4 class="footer-title">Support</h4>
+                    <a href="contact.html" class="footer-link">Contact Us</a>
+                    <a href="#" class="footer-link">FAQ</a>
+                    <a href="#" class="footer-link">Terms of Service</a>
+                    <a href="#" class="footer-link">Privacy Policy</a>
+                </div>
+
+                <!-- Col 4: Newsletter -->
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="footer-title">Stay Inspired</h4>
+                    <p style="color: rgba(255,255,255,0.7);">Subscribe to our newsletter for the latest workshops, tips,
+                        and creative inspiration.</p>
+                    <form class="d-flex mt-3" onsubmit="event.preventDefault();">
+                        <input type="email" class="form-control newsletter-input shadow-none"
+                            placeholder="Your email address" required>
+                        <button type="submit"
+                            class="btn btn-main newsletter-btn shadow-none flex-shrink-0">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <hr class="mt-5 mb-4" style="border-color: rgba(255,255,255,0.1);">
+
+            <div class="text-center" style="color: rgba(255,255,255,0.6);">
+                <p class="mb-0">&copy; <span id="currentYear">2026</span> DIY Craft Workshop. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <a href="#" id="backToTop" class="back-to-top btn-main">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom Script -->
+    <script src="assets/script.js"></script>
+</body>
+
+</html>
