@@ -704,6 +704,7 @@ body.dark-mode .auth-wrapper {
     background: var(--card-bg);
 }
 
+.table tbody tr:hover,
 .table-hover tbody tr:hover {
     background-color: var(--tertiary);
     color: var(--text-main);
@@ -715,8 +716,15 @@ body.dark-mode .table {
     --bs-table-border-color: var(--glass-border);
 }
 
+body.dark-mode .table tbody tr:hover,
 body.dark-mode .table-hover tbody tr:hover {
     background-color: rgba(255, 255, 255, 0.05);
+    color: var(--text-main);
+}
+
+body.dark-mode .table tbody tr:hover td,
+body.dark-mode .table-hover tbody tr:hover td {
+    color: var(--text-main);
 }
 
 /* Offcanvas overrides */
